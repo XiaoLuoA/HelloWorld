@@ -1,0 +1,60 @@
+1.git --version 查看git版本
+2.git config --local 只对某个仓库有效 
+			 --global 对当前用户的所有仓库有效
+			 --system  对系统所有的登录有效
+			           user.name    'xiaoluo'  
+			           user.email   'xx@qq.com'
+  git config --list --global 
+					--local  
+					--system 查看当前配置
+3.已有项目代码纳入git管理
+	进入文件夹 git init
+  初始创建仓库
+    git init git_learning
+4.git add -u 所有修改的文件
+                 加入到本地仓库
+5.git commit -m 提交的信息
+			 --amend 修改这次提交的信息
+			 
+  " "可以有空格  ''中不可以有空格
+6.git log   --oneline 以一行的格式的查看
+			-n4 最近4行
+			--graph 图形化显示
+			
+7.git cat-file -p 查看文件内容
+  git cat-file -t  查看文件类型
+		    
+			         查看日志
+7.git status 查看状态
+8.git mv 重命名文件
+9.git branch -v 查看分支
+			 -b 切换分支
+			 -d 删除分支
+			 -D 强制删除分支
+10.git checkout -b 分支名
+				-- index.html 将工作区和暂存区改为一致
+				检出代码
+				
+11.git help --web log 
+						以web的方式查看log命令的帮助文档
+12.gitk 图形化界面						
+13.git diff     head head^1 head上一级
+				工作区和暂存区有什么差异
+				--cached 查看暂存区和head的差异
+				-- readme.md 查看工作区和暂存区的差异
+				查看内容的变化
+14.git rebase -i  record 修改历史commit的message
+				  pick 挑选
+				  pick + squash   合并多个commit到第一个
+15.git reset HEAD 将暂存区文件恢复到和head一样
+             HEAD -- index.html 恢复部分文件
+			 --hard commit_id  消除commit_id之上的commit
+16.git rm index.html 删除文件
+17.git stash 暂存当前的工作区
+			 apply 恢复工作区且不删除此条记录
+			 pop   恢复工作区且删除此条记录		 
+18.git clone http://xxx test1
+19.git remote 远端增加
+20.
+   
+						
