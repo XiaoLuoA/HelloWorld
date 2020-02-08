@@ -1,0 +1,4 @@
+in:readme
+stars:>5000
+
+'代码内容' filename:文件名
